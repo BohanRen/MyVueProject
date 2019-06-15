@@ -14,12 +14,13 @@ const router = new VueRouter({
   routes:[
     {path:"/",component:Home},
     {path:"/helloworld",component:HelloWorld}
-  ]
+  ],
+  mode:"history"
 })
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   components: { App },
   template: '<App/>',
-  router
+  router,
 })
