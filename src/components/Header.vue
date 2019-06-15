@@ -23,7 +23,20 @@ export default {
             //this.title = "changed!!";
             this.$emit('titleChanged',"子向父组件传值");
         }
-    }
+    },
+    beforeCreate: function() {
+        alert("组件实例化之前");
+    },
+    created: function() {
+        alert("组件加载完毕，页面还没显示");
+    },
+    beforeMount() {
+        alert("组件挂载前，页面还没展示，但虚拟dom已经生成");
+    },
+    mounted() {
+        alert("组件挂载后，页面即将显示");
+    },
+    
 }
 </script>
 
