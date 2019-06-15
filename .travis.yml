@@ -7,5 +7,4 @@ before_script:
   - npm install -g vue-cli
   - npm install
 script:
-  - npm run dev || exit 1;
   - npm run build
